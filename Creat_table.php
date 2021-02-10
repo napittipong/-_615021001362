@@ -15,17 +15,33 @@ echo "Connected successfully";
 ?>
 
 
-<html> 
-<body> 
-<form action = "insert.php" = method="post">
- รหัสภาพยนตร์:<input type="text" name="firstname" /> <br/> 
-ชื่อภาพยนตร์:<input type="text" name="lastname" /> <br/> 
-เวลา:<input type="text" name="lastname" /> <br/>  
-ชื่อผู้ใช้งาน:<input type="text" name="lastname" /> <br/>
-รหัส PIN:<input type="text" name="lastname" /> <br/>
-<input type="submit" value="บันทึก" name="submit_btn"/> 
-</form> 
-</body> 
+<table border="2" style="width:60%">
+    <tr>
+    <form method="get" id="form" enctype="multipart/form-data" action="insert_from.php">
+        <button class="button4">เพิ่มข้อมูล</button>
+    </form>
+    <form method="get" id="form" enctype="multipart/form-data" action="logout.php">
+        <button class="button3">ออกจากระบบ</button>
+    </form>
+    </tr>
+    <div>
+    <form method="get" id="form" enctype="multipart/form-data" action="">
+      <input type="text" name="search" placeholder="รหัสนักศึกษา.." value="">
+      <input type="submit" class="button5" value="ค้นหา">
+    </form>
+    </div>
+    <tr id="th">
+        <th>รหัสภาพยนต์</th>
+        <th>ชื่อภาพยนต์</th>
+        <th>เวลาที่ฉาย</th>
+        <th>ชื่อผู้ใช้</th>
+        <th>รหัสผ่าน</th>
+        <th>แก้ไข</th>
+        <th>ลบ</th>
+    </tr>
+</table>
+</body>
 </html>
+
 
 
