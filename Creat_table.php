@@ -20,9 +20,6 @@ echo "Connected successfully";
     <form method="get" id="form" enctype="multipart/form-data" action="insert_from.php">
         <button class="button4">เพิ่มข้อมูล</button>
     </form>
-    <form method="get" id="form" enctype="multipart/form-data" action="logout.php">
-        <button class="button3">ออกจากระบบ</button>
-    </form>
     </tr>
     <div>
     <form method="get" id="form" enctype="multipart/form-data" action="">
